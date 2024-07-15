@@ -98,11 +98,23 @@ nav {
     padding-right: 30px;
     align-items: center;
     justify-items: center;
+    animation: appearAfterLandingPageImage 1.6s ease forwards;
+}
+@keyframes appearAfterLandingPageImage {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .description>div>p{
     color: #737474;
 }
-.description>div>button{
+.readMoreBtn{
     font-size: 24px;
     margin-top: 30px;
     background-color: #FF7F46;
@@ -121,6 +133,15 @@ nav {
     height: 100%;
     justify-content: flex-end;
     padding-right: 30px;
+    animation: slideFromLeft 1.5s ease forwards;
+}
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .landingPageImage img{
     height: 100%;
@@ -154,21 +175,76 @@ nav {
     height: 200px;
     border-radius: 15px;
 }
-.bookExclusive{
+.card{
     display: flex;
     background-color: rgb(250, 250, 250);
     align-items: center;
     gap: 15px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, background-image 0.3s ease, opacity 0.3s ease;
 }
-.bookExclusive.image>img{
+.card:hover{
+    transform: scale(1.02);
+    background-image: url('../images/cardBackgroundImage.svg');
+    background-size: cover;
+    background-position: center;
+}
+.image>img{
     height: 100%;
     width: auto;
 }
-.bookExclusive.image{
+.image{
     background-color: #4582FF;
     border-radius: 50%;
     padding: 10px;
     width: 100px;
     height: 100px;
+}
+.image.exclusiveParty{
+    background-color: #FF7F46;
+}
+.image.exclusiveContext{
+    background-color: #FF5B5C;
+}
+.image.exclusiveContext>img{
+    padding: 10px;
+}
+.image.privateLesson{
+    background-color: #ADA729;
+}
+.image.musicConference{
+    background-color: #8E56FF;
+}
+.image.schoolStudy{
+    background-color: #1AB69D;
+}
+
+/* Main Fourth */
+.main.fourth{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    display: flex;
+    padding: 30px;
+    background-color: aliceblue;
+}
+
+.fourth.one{
+    width: 40%;
+    height: auto;
+    display: flex;
+}
+.fourth.two{
+    display: flex;
+    width: 40%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.fourth.three{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
