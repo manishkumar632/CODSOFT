@@ -1,7 +1,10 @@
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('../fonts/SFPRODISPLAYREGULAR.otf') format('opentype');
+}
 body, *{
     margin: 0px;
     padding: 0px;
-    /* background-color: black; */
 }
 
 .main {
@@ -22,34 +25,112 @@ body, *{
     border: 3px solid white;
 }
 
-.main>img{
-    top: 50%;
+.headerBar{
+    display: flex;
+    margin: 20px 0px 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.showTime{
+    color: white;
+    font-family: 'SF Pro Display Regular';
+}
+
+.getInput{
+    position: absolute;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
-    height: 100%;
-    width: auto;
-    margin: 0;
+    width: 96%;
+    height: 70px;
+    background-color: #272525;
+    border: none;
+    border-radius: 10px;
+    font-size: 60px;
+    color: white;
+    text-align: right;
+    overflow-x: auto;
 }
 
 .buttons{
-    padding: 10px;
+    padding-bottom: 30px;
     position: absolute;
     bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 100%;
     height: 60%;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
 .btn{
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background-color: chocolate;
+    background-color: #333333;
     border: none;
+    font-size: 30px;
+    color: white;
+}
+.btn.special{
+    color: black;
+    background-color: #A5A5A5;
+}
+
+.btn.operator{
+    background-color: #FF9F0A;
+}
+
+#zero{
+    grid-column: span 2;
+    width: 160px;
+    border-radius: 50px;
+}
+
+
+.battery{
+    display: flex;
+    width: 30px;
+    height: 14px;
+    align-items: center;
+}
+.batteryBody{
+    width: 85%;
+    height: 80%;
+    border: 2px solid gray;
+    border-radius: 4px;
+    background-color: white;
+}
+.batteryHead{
+    width: 15%;
+    height: 50%;
+    border: 2px solid gray;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: white;
+    border-left: none;
+}
+.signalsAndBattery{
+    display: flex;
+    gap: 10px;
+}
+
+.signalsAndBattery>div>img{
+    height: 14px;
+}
+
+.middleDiv{
+    width: 35%;
+    height: 14px;
+    background-color: #333333;
+    border-radius: 10px;
+    border: 1px solid black;
 }

@@ -13,21 +13,45 @@
     <main>
         <div class="main outer">
             <div class="main inner">
+                <div class="headerBar">
+                    <div class="showTime"></div>
+                    <div class="middleDiv"></div>
+                    <div class="signalsAndBattery">
+                        <div>
+                            <img src="{% static 'images/signals.svg' %}" alt="">
+                        </div>
+                        <div class="battery">
+                            <div class="batteryBody"></div>
+                            <div class="batteryHead"></div>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="getInput" value="0" disabled />
                 <div class="buttons">
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
-                    <button class="btn" id="clear">C</button>
+                    <button type="button" class="btn special" value="clear">AC</button>
+                    <button type="button" class="btn special" value="changeSign">+/-</button>
+                    <button type="button" class="btn special" value="%">%</button>
+                    <button type="button" class="btn operator" value="÷">&divide;</button>
+                    <button type="button" class="btn" value="7">7</button>
+                    <button type="button" class="btn" value="8">8</button>
+                    <button type="button" class="btn" value="9">9</button>
+                    <button type="button" class="btn operator" value="x">&times;</button>
+                    <button type="button" class="btn" value="4">4</button>
+                    <button type="button" class="btn" value="5">5</button>
+                    <button type="button" class="btn" value="6">6</button>
+                    <button type="button" class="btn operator" value="-">-</button>
+                    <button type="button" class="btn" value="1">1</button>
+                    <button type="button" class="btn" value="2">2</button>
+                    <button type="button" class="btn" value="3">3</button>
+                    <button type="button" class="btn operator" value="+">+</button>
+                    <button type="button" class="btn" value="0" id="zero">0</button>
+                    <button type="button" class="btn" value=".">.</button>
+                    <button type="button" class="btn operator" value="=">=</button>
                 </div>
             </div>
         </div>
     </main>
 </body>
+<script src="{% static 'javascript/index.js' %}"></script>
 
 </html>
