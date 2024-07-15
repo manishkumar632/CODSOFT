@@ -185,9 +185,6 @@ nav {
 }
 .card:hover{
     transform: scale(1.02);
-    background-image: url('../images/cardBackgroundImage.svg');
-    background-size: cover;
-    background-position: center;
 }
 .image>img{
     height: 100%;
