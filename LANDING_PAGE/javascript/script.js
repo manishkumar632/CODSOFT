@@ -22,39 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(slide, 1000);
 });
 
-function createCard(id, person) {
-    const card = document.createElement("div");
-    card.className = "testimonials-card";
-    const circle = document.createElement("div");
-    circle.className = "testimonials-card-circle";
-    const text = document.createElement("h1");
-    text.textContent = "⁕";
-    circle.appendChild(text);
-    card.appendChild(circle);
-    const content = document.createElement("div");
-    content.className = "testimonials-card-content";
-    return card;
-}
-fetch("data.json")
-    .then((response) => response.json())
-    .then((data) => {
-        const container = document.getElementsByClassName("testimonials-cards");
-        for (const id in data) {
-            if (data.hasOwnProperty(id)) {
-                const person = data[id];
-                const card = createCard(id, person);
-                container.appendChild(card);
-            }
-        }
-    })
-    .catch((error) => console.error("Error fetching JSON data:", error));
-
-const cards = document.querySelectorAll(".testimonials-card-description");
-cards.forEach((card) => {
-    card.addEventListener("mouseover", addCss);
-    card.addEventListener("mouseleave", removeCss);
-});
-
 function addCss(event) {
     const card = event.target.parentElement;
     const circle = card.querySelector(".testimonials-card-circle");
@@ -69,4 +36,45 @@ function removeCss(event) {
     const text = card.querySelector(".testimonials-card-circle h1");
     circle.style.backgroundColor = "white";
     text.style.color = "#FF7F46";
+}
+
+document.addEventListener("DOMContentLoaded", async function () {
+    const response = await fetch("javascript/data.json");
+    const data = await response.json();
+
+    for (const id in data) {
+        if (data.hasOwnProperty(id)) {
+            const person = data[id];
+            const card = await createCard(person);
+            document.querySelector(".testimonials-cards").appendChild(card);
+        }
+    }
+    const cards = document.querySelectorAll(".testimonials-card");
+    cards.forEach((card) => {
+        card.addEventListener("mouseover", addCss);
+        card.addEventListener("mouseleave", removeCss);
+    });
+});
+
+async function createCard(person) {
+    const html = await fetch("components/testimonialCard.html");
+    const text = await html.text();
+    const card = document.createElement("div");
+    card.innerHTML = text;
+    card.querySelector(".testimonials-card-description").innerHTML =
+        person.description;
+    card.querySelector(".testimonials-card-name").innerHTML = person.name;
+    card.querySelector("img").src = person.image;
+    card.querySelector("img").alt = person.name;
+    card.querySelector(".testimonials-card-designation").innerHTML =
+    person.designation;
+    const rating = card.querySelector(".testimonials-card-rating");
+    for (let i = 0; i < person.rating; i++) {
+        rating.innerHTML +=
+            '<i class="fas fa-star" style="color: #FF7F46"></i>';
+    }
+    for (let i = 0; i < 5 - person.rating; i++) {
+        rating.innerHTML += '<i class="far fa-star"></i>';
+    }
+    return card;
 }
