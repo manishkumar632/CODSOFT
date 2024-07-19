@@ -1,0 +1,30 @@
+{
+    "1": {
+        "name": "William Jack",
+        "designation": "Parent",
+        "description": "The dedicated faculty and staff at this school make learning a joyful experience. I couldn't have asked for a better educational environment.",
+        "rating": 3,
+        "image": "https://cdn.sanity.io/images/1a142z34/production/1ddc7ac867f152ca9dff8ad4c536e990c32140bc-1020x675.jpg"
+    },
+    "2": {
+        "name": "John Doe",
+        "designation": "Developer",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour",
+        "rating": 4,
+        "image": "https://cdn.sanity.io/images/1a142z34/production/963995396aa827c90e73a9aba25978d5939600aa-100x100.png"
+    },
+    "3": {
+        "name": "James Smith",
+        "designation": "Student",
+        "description": "I am extremely satisfied with the quality of education provided by this institution. It has helped me grow both academically and personally.",
+        "rating": 3,
+        "image": "https://cdn.sanity.io/images/1a142z34/production/73526e8ac1241ac0df8b4878585bd4c67455bd58-100x100.png"
+    },
+    "4": {
+        "name": "Micky Cris",
+        "designation": "Alumnus",
+        "description": "This institution has exceeded my expectations in terms of academic excellence and extracurricular activities. I highly recommend it to all students and parents.",
+        "rating": 5,
+        "image": "https://cdn.sanity.io/images/1a142z34/production/73526e8ac1241ac0df8b4878585bd4c67455bd58-100x100.png"
+    }
+}
