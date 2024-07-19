@@ -1,9 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const navItems = document.querySelectorAll(".nav-item");
-
-    navItems.forEach((item) => {
-        item.addEventListener("click", () => {
-            alert(`You clicked on ${item.textContent.trim()}`);
-        });
+// script.js
+$(document).ready(function () {
+    $(".your-slider").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows: true
     });
 });

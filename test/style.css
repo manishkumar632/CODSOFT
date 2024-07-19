@@ -1,33 +1,19 @@
-body {
-    font-family: 'SF Pro Display Regular', sans-serif; /* Use your custom font */
+.one{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+.two{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+}
+.three{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
 }
 
-
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for nav */
-}
-
-.navbar {
-    list-style-type: none;
-    display: flex;
-    gap: 30px; /* Space between nav items */
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item {
-    position: relative;
-    font-size: 18px;
-    font-weight: bold;
-    color: #000; /* Text color */
-    cursor: pointer;
-    user-select: none; /* Prevent text selection */
-}
-
-.dropdown {
-    font-size: 12px;
-    margin-left: 5px;
+.two:hover + .one {
+  background-color: yellow;
 }

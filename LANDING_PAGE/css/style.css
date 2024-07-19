@@ -313,3 +313,60 @@ nav {
     border-radius: 15px;
     color: white;
 }
+
+.testimonials{
+    padding: 50px 30px 30px 30px;
+    background-color: #4482FF;
+    color: white;
+}
+.testimonials-heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.testimonials-cards{
+    width: auto;
+    height: 600px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.testimonials-card{
+    flex: 0 0 auto;
+    position: relative;
+    width: 50%;
+    min-width: 600px;
+    height: 100%;
+}
+.testimonials-card-circle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+.testimonials-card-circle h1{
+    font-size: 80px;
+    text-align: center;
+    color: #FF7F46;
+    transition: color 0.3s ease;
+}
+
+.testimonials-card-description{
+    border: 2px dashed;
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
