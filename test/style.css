@@ -1,19 +1,17 @@
-.one{
-    height: 400px;
-    width: 400px;
+/* resizable div css */
+.resizable {
+    width: 100px;
+    height: 100px;
     background-color: red;
-}
-.two{
-    height: 400px;
-    width: 400px;
-    background-color: blue;
-}
-.three{
-    height: 200px;
-    width: 200px;
-    background-color: aqua;
+    resize: both;
+    overflow: auto;
 }
 
-.two:hover + .one {
-  background-color: yellow;
+/* resizable circle css */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    resize: both;
 }
