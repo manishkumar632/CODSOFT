@@ -62,11 +62,22 @@ document.addEventListener("DOMContentLoaded", async function() {
 });
 
 async function createCard(person, templateText) {
+    const starIcon = "&#9733;";
+    const maxRating = 5;
+    let starsHtml = "";
+
+    for (let i = 1; i <= maxRating; i++) {
+        if (i <= person.rating) {
+            starsHtml += `<span style="color: #FF7F46; font-size: 32px;">${starIcon}</span>`;
+        } else {
+            starsHtml += `<span style="font-size: 32px;">${starIcon}</span>`;
+        }
+    }
     templateText = templateText
         .replace("testimonialdescription", person.description)
         .replace("testimonialName", person.name)
         .replace("testimonialDesignation", person.designation)
-        .replace("stars", person.rating)
+        .replace("stars", starsHtml)
         .replace("imagesrc", person.image);
     return templateText;
 }
