@@ -141,3 +141,58 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 10);
     });
 });
+
+
+window.addEventListener("resize", handleResize);
+
+const map = new Map();
+map.set(1024, false);
+map.set(768, false);
+map.set('greaterThan1024', false)
+
+let initialWidth = window.innerWidth;
+function handleResize() {
+    const studyOffFlexibly = document.querySelector(".study-off-flexibly");
+    let textDiv = document.querySelectorAll(".study-off-flexibly-text");
+    let readMoreBtn = document.querySelector(".study-off-flexibly-readmoreBtn").cloneNode(true);
+    const textDivClone = textDiv[0].cloneNode(true);
+    if (window.innerWidth <= 1024 && !map.get(1024)) {
+        initialWidth = window.innerWidth;
+        const newDiv = document.createElement("div");
+        newDiv.appendChild(textDivClone);
+        newDiv.appendChild(readMoreBtn);
+        studyOffFlexibly.removeChild(studyOffFlexibly.lastElementChild);
+        studyOffFlexibly.removeChild(studyOffFlexibly.lastElementChild);
+        studyOffFlexibly.appendChild(newDiv);
+        map.set(1024, true);
+        map.set("greaterThan1024", false);
+        map.set(768, false);
+    }
+    if(window.innerWidth <= 768 && !map.get(768)){
+        initialWidth = window.innerWidth;
+        studyOffFlexibly.removeChild(studyOffFlexibly.lastChild)
+        studyOffFlexibly.appendChild(textDivClone);
+        studyOffFlexibly.appendChild(readMoreBtn);
+        map.set(768, true);
+        map.set("greaterThan1024", false);
+        map.set(1024, false);
+    }
+    if (window.innerWidth > 1024 && !map.get("greaterThan1024")) {
+        if (initialWidth > 1024) return;
+        studyOffFlexibly.removeChild(studyOffFlexibly.lastChild)
+        studyOffFlexibly.appendChild(textDivClone);
+        studyOffFlexibly.appendChild(readMoreBtn);
+        map.set("greaterThan1024", true);
+        map.set(1024, false);
+        map.set(768, false);
+        textDiv = document.querySelectorAll(".study-off-flexibly-text");
+        readMoreBtn = document
+            .querySelectorAll(".study-off-flexibly-readmoreBtn");
+        if (textDiv.length > 1) {
+            textDiv[0].remove();
+        }
+        if (readMoreBtn.length > 1) {
+            readMoreBtn[0].remove();
+        }
+    }
+}
