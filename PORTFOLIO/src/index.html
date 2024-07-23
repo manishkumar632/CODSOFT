@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+        body {
+            font-family: "Ubuntu", sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-color1 text-white p-6">
+    <header class="flex justify-between pl-16 pr-16 items-center mb-4">
+        <div class="flex justify-center items-center text-3xl gap-4">
+            <img src="../images/portfolioLogo.svg" alt="logo">
+            <h1><span class="text-color2">M</span>anish</h1>
+        </div>
+        <nav class="text-xl hidden lg:flex">
+            <ul class="flex md:gap-4 xl:gap-10">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>|</li>
+                <li class="phone">📞 +91 8168948546</li>
+            </ul>
+        </nav>
+        <div class="lg:hidden md:flex justify-center items-center">
+            <img src="../images/navbar.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="flex flex-col justify-between text-3xl gap-6">
+                <div></div>
+                <div class="w-[max-content] flex flex-col gap-4">
+                    <p class="text-color2">Hello I'm</p>
+                    <h1 class="text-6xl xl:text-8xl lg:text-7xl">MANISH KUMAR</h1>
+                    <div class="flex items-center text-4xl lg:text-5xl">
+                        <p id="typingText" class="text-color2"></p>
+                        <p class="cursor">_</p>
+                        <p class="ml-4">Developer</p>
+                    </div>
+                </div>
+                <button class="w-max bg-blue-500 rounded-[50px] px-6 py-3 hover:bg-[#FF7F46] transition-all duration-300 ease-in-out">Hire Me</button>
+            </div>
+            <div>
+                <img src="../images/myImage.png" alt="myImage">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

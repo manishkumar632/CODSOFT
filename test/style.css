@@ -1,17 +1,19 @@
-/* resizable div css */
-.resizable {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    resize: both;
-    overflow: auto;
-}
 
-/* resizable circle css */
-.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: red;
-    resize: both;
+
+.cursor {
+    animation: blink 0.8s step-end infinite;
+    
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

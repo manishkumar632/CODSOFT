@@ -1,0 +1,28 @@
+nav ul li a{
+    transition: color 0.3s ease;
+}
+.phone{
+    transition: color 0.3s ease;
+}
+nav ul li a:hover, .phone:hover{
+    color: #FF7F46;
+}
+
+.cursor {
+    animation: blink 0.5s step-end infinite;
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
