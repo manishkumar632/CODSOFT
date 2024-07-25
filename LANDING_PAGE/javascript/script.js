@@ -39,8 +39,8 @@ function removeCss(event) {
 }
 
 document.addEventListener("DOMContentLoaded", async function() {
-    const response = await fetch("data/data.json");
-    const template = await fetch("components/testimonialCard.html");
+    const response = await fetch("./data/data.json");
+    const template = await fetch("./components/testimonialCard.html");
     const data = await response.json();
     const templateText = await template.text();
 
@@ -95,7 +95,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const cards = document.querySelector(".testimonials-card");
         const firstCard = cards.cloneNode(true);
         setTimeout(() => {
-            document.querySelector(".testimonials-card").style.animation = "slideLeft 1s ease forwards";
+            document.querySelector(".testimonials-card").style.animation =
+                "slideLeft 1s ease forwards";
             document
                 .querySelector(".testimonials-card")
                 .addEventListener(
@@ -110,7 +111,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                     { once: true }
                 );
-            const testimonialsContainer = document.querySelector(".testimonials-cards");
+            const testimonialsContainer = document.querySelector(
+                ".testimonials-cards"
+            );
             testimonialsContainer.appendChild(firstCard);
         }, 10);
     });
@@ -136,25 +139,31 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
                 { once: true }
             );
-            const testimonialsContainer = document.querySelector(".testimonials-cards");
-            testimonialsContainer.insertBefore(lastCardClone, testimonialsContainer.firstChild);
+            const testimonialsContainer = document.querySelector(
+                ".testimonials-cards"
+            );
+            testimonialsContainer.insertBefore(
+                lastCardClone,
+                testimonialsContainer.firstChild
+            );
         }, 10);
     });
 });
-
 
 window.addEventListener("resize", handleResize);
 
 const map = new Map();
 map.set(1024, false);
 map.set(768, false);
-map.set('greaterThan1024', false)
+map.set("greaterThan1024", false);
 
 let initialWidth = window.innerWidth;
 function handleResize() {
     const studyOffFlexibly = document.querySelector(".study-off-flexibly");
     let textDiv = document.querySelectorAll(".study-off-flexibly-text");
-    let readMoreBtn = document.querySelector(".study-off-flexibly-readmoreBtn").cloneNode(true);
+    let readMoreBtn = document
+        .querySelector(".study-off-flexibly-readmoreBtn")
+        .cloneNode(true);
     const textDivClone = textDiv[0].cloneNode(true);
     if (window.innerWidth <= 1024 && !map.get(1024)) {
         initialWidth = window.innerWidth;
@@ -168,9 +177,9 @@ function handleResize() {
         map.set("greaterThan1024", false);
         map.set(768, false);
     }
-    if(window.innerWidth <= 768 && !map.get(768)){
+    if (window.innerWidth <= 768 && !map.get(768)) {
         initialWidth = window.innerWidth;
-        studyOffFlexibly.removeChild(studyOffFlexibly.lastChild)
+        studyOffFlexibly.removeChild(studyOffFlexibly.lastChild);
         studyOffFlexibly.appendChild(textDivClone);
         studyOffFlexibly.appendChild(readMoreBtn);
         map.set(768, true);
@@ -179,15 +188,16 @@ function handleResize() {
     }
     if (window.innerWidth > 1024 && !map.get("greaterThan1024")) {
         if (initialWidth > 1024) return;
-        studyOffFlexibly.removeChild(studyOffFlexibly.lastChild)
+        studyOffFlexibly.removeChild(studyOffFlexibly.lastChild);
         studyOffFlexibly.appendChild(textDivClone);
         studyOffFlexibly.appendChild(readMoreBtn);
         map.set("greaterThan1024", true);
         map.set(1024, false);
         map.set(768, false);
         textDiv = document.querySelectorAll(".study-off-flexibly-text");
-        readMoreBtn = document
-            .querySelectorAll(".study-off-flexibly-readmoreBtn");
+        readMoreBtn = document.querySelectorAll(
+            ".study-off-flexibly-readmoreBtn"
+        );
         if (textDiv.length > 1) {
             textDiv[0].remove();
         }
