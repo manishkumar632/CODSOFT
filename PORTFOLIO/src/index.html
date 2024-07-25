@@ -11,13 +11,16 @@
 
         body {
             font-family: "Ubuntu", sans-serif;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
         }
     </style>
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="bg-color1 text-white p-6">
-    <header class="flex justify-between pl-16 pr-16 items-center mb-4">
+<body class="bg-color1 text-white pb-6">
+    <header class="flex justify-between pl-16 pr-16 items-center sticky top-0 bg-color1 pt-4 pb-4 z-10 opacity-100">
         <div class="flex justify-center items-center text-3xl gap-4">
             <img src="../images/portfolioLogo.svg" alt="logo">
             <h1><span class="text-color2">M</span>anish</h1>
@@ -38,7 +41,7 @@
             <img src="../images/navbar.svg" alt="">
         </div>
     </header>
-    <main>
+    <main class="pl-6 pr-6">
         <div class="flex flex-col md:flex-row gap-4">
             <div class="flex flex-col justify-between text-3xl gap-6">
                 <div></div>
@@ -51,14 +54,440 @@
                         <p class="ml-4">Developer</p>
                     </div>
                 </div>
-                <button class="w-max bg-blue-500 rounded-[50px] px-6 py-3 hover:bg-[#FF7F46] transition-all duration-300 ease-in-out">Hire Me</button>
+                <button
+                    class="w-max bg-blue-500 rounded-[50px] px-6 py-3 hover:bg-[#FF7F46] transition-all duration-300 ease-in-out">Hire
+                    Me</button>
             </div>
             <div>
+                <img class="rounded-full" src="../images/myImage.png" alt="myImage">
+            </div>
+        </div>
+        <div class="flex pt-6 pb-6 text-5xl text-[#ceceed] justify-center mt-10">
+            <h1>Connect With Me</h1>
+        </div>
+        <div class="socialLinks flex justify-center gap-2">
+            <div class="flexDiv">
+                <div class="socialIcon bg-black z-10">
+                    <img src="../images/instagram.svg" alt="instagram">
+                </div>
+                <div class="socialMediaName text-2xl instagram">
+                    Instagram</div>
+            </div>
+            <div>
+                <div class="socialIcon bg-white">
+                    <img src="../images/twitter.svg" alt="twitter">
+                </div>
+                <div class="socialMediaName text-2xl twitter">
+                    Twitter</div>
+            </div>
+            <div>
+                <div class="socialIcon bg-white">
+                    <img src="../images/github.svg" alt="github">
+                </div>
+                <div class="socialMediaName text-2xl github">
+                    GitHub</div>
+            </div>
+            <div>
+                <div class="socialIcon bg-white">
+                    <img src="../images/linkedin.svg" alt="linkedin">
+                </div>
+                <div class="socialMediaName text-2xl linkedin">
+                    LinkedIn</div>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center mt-10 text-3xl">
+            <p class="text-[sandybrown] target-aboutme">ABOUT ME</p>
+            <div class="relative">
+                <div class="w-[220px] h-[3px] bg-white">
+                    <div
+                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutMe grid grid-cols-1 lg:grid-cols-2 gap-4 mt-16 text-color3">
+            <div class="flex justify-center h-[500px]">
                 <img src="../images/myImage.png" alt="myImage">
+            </div>
+            <div class="flex flex-col justify-start gap-4 text-2xl">
+                <p>Hi There! I'm Manish Kumar</p>
+                <div class="h-8 overflow-hidden w-[max-content] text-center text-2xl">
+                    <div class="flex justify-center">
+                        <div class="techStack text-color2 pt-6">
+                            <h1>Java</h1>
+                            <h1>Python</h1>
+                            <h1>Web</h1>
+                        </div>
+                        <h1 class="ml-3 h-[max-content] w-[max-content]">Developer</h1>
+                    </div>
+                </div>
+                <p class="text-justify">Aspiring <u>software developer</u> with strong knowledge in programming
+                    languages and frameworks, and a proven track record of
+                    successful project completion. Seeking to leverage my skills and passion for technology to
+                    contribute to a dynamic team.
+                </p>
+                <div class="flex gap-4">
+                    <div class="flex flex-col w-max">
+                        <span>Birthday</span>
+                        <span>Phone</span>
+                        <span>Email</span>
+                        <span>Address</span>
+                        <span>Language</span>
+                        <span>Freelance</span>
+                    </div>
+                    <div class="flex flex-col w-max">
+                        <span>:</span>
+                        <span>:</span>
+                        <span>:</span>
+                        <span>:</span>
+                        <span>:</span>
+                        <span>:</span>
+                    </div>
+                    <div class="flex flex-col w-max">
+                        <span>Sep-02-2001</span>
+                        <span>+91 8168948546</span>
+                        <span>manishmu632@gmail.com</span>
+                        <span>Sunsari, Nepal</span>
+                        <span>Nepali, English, Hindi</span>
+                        <span>Available</span>
+                    </div>
+                </div>
+                <button class="w-max pl-4 pr-4 pt-2 pb-2 bg-color2 border rounded-full text-black">Download CV</button>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center mt-16 text-3xl">
+            <p class="text-[sandybrown] target-aboutme">MY SKILLS</p>
+            <div class="relative">
+                <div class="w-[220px] h-[3px] bg-white">
+                    <div
+                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
+            <div class="flex flex-col justify-center text-justify">
+                <p class="text-4xl">All the skills that I have in that field of work are mentioned.</p>
+                <p class="text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus corporis
+                    placeat doloremque voluptatibus ipsum suscipit? Nihil excepturi, quam impedit est ipsa, voluptas at
+                    pariatur unde vitae commodi obcaecati molestias nisi!</p>
+            </div>
+            <div class="text-2xl flex flex-col gap-3 justify-center">
+                <div>
+                    <div class="flex justify-between"><span>Java</span><span>70%</span></div>
+                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                        <div class="flex h-[100%] w-[70%] bg-color2 rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between"><span>Python</span><span>50%</span></div>
+                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                        <div class="flex h-[100%] w-[50%] bg-color2 rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between"><span>JavaScript</span> <span>80%</span></div>
+                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                        <div class="flex h-[100%] w-[80%] bg-color2 rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between"><span>Django</span> <span>90%</span></div>
+                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                        <div class="flex h-[100%] w-[90%] bg-color2 rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between"><span>React</span> <span>60%</span></div>
+                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                        <div class="flex h-[100%] w-[60%] bg-color2 rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between"><span>HTML/CSS</span> <span>90%</span></div>
+                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                        <div class="flex h-[100%] w-[90%] bg-color2 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center mt-16 text-3xl">
+            <p class="text-[sandybrown] target-aboutme">RESUME</p>
+            <div class="relative">
+                <div class="w-[220px] h-[3px] bg-white">
+                    <div
+                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10">
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center gap-8">
+                    <div class="w-12 h-12"><img class="w-full h-auto" src="../images/experience.svg" alt=""></div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-3 h-3 bg-slate-700 hover:bg-color2 transition-all duration-200 border-none rounded-full">
+                        </div>
+                        <div class="timeline1 w-[1px] bg-slate-700"></div>
+                        <div
+                            class="w-3 h-3 bg-slate-700 hover:bg-color2 transition-all duration-200 border-none rounded-full">
+                        </div>
+                        <div class="timeline2 w-[1px] bg-slate-700"></div>
+
+
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="h-12 flex items-center text-3xl">
+                        <h1>Education</h1>
+                    </div>
+                    <div class="flex flex-col gap-12">
+                        <div class="btech flex flex-col gap-4">
+                            <div>
+                                <h1 class="text-3xl text-color2">Bachelor of Computer Science and Engineering</h1>
+                                <h1 class="text-lg">2022 - Ongoing</h1>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl text-color3">Maharishi Markandeshwar Deemed To Be University</h1>
+                                <h1 class="text-lg">Mullana, Ambala, Haryana, India</h1>
+                            </div>
+                        </div>
+                        <div class="school flex flex-col gap-4">
+                            <div>
+                                <h1 class="text-3xl text-color2">+2 in Computer Science</h1>
+                                <h1 class="text-lg">2017 - 2019</h1>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl text-color3">Kantipur Secondary School</h1>
+                                <h1 class="text-lg">Biratnagar, Morang, Nepal</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center mt-16 text-3xl">
+            <p class="text-[sandybrown] target-aboutme">PROJECTS</p>
+            <div class="relative">
+                <div class="w-[220px] h-[3px] bg-white">
+                    <div
+                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 flex flex-col gap-6 lg:pl-16 lg:pr-16">
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex min-w-[250px] justify-center">
+                    <img class="rounded-lg" src="../images/farmDCare.png" alt="FARM-D-CARE">
+                </div>
+                <div>
+                    <h1 class="text-2xl text-color3">Farm-D-Care</h1>
+                    <p class="text-xl text-justify">Farm-D-Care was a AI-ML based app project integrating agriculture
+                        and technology to revolutionise crop
+                        disease detection. It was developed with the vision to empower farmers with actionable insights,
+                        enhancing
+                        crop health and productivity as by capturing images, farmers could swiftly diagnose diseases,
+                        enabling
+                        proactive measures to safeguard yields.</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex min-w-[250px] justify-center">
+                    <img class="rounded-lg" src="../images/smartChargingSystem.svg" alt="FARM-D-CARE">
+                </div>
+                <div>
+                    <h1 class="text-2xl text-color3">Smart Charge Monitoring System</h1>
+                    <p class="text-xl text-justify">Smart charging control system automatically disconnects the power
+                        supply to a charger once the connected
+                        device is fully charged, enhancing energy efficiency and prolonging battery life. It was
+                        developed with the
+                        vision to save electricity wastage.</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex min-w-[250px] justify-center">
+                    <img class="rounded-lg" src="../images/housePricePrediction.svg" alt="FARM-D-CARE">
+                </div>
+                <div>
+                    <h1 class="text-2xl text-color3">House Price Prediction</h1>
+                    <p class="text-xl text-justify">It was machine learning project in which a model was built to
+                        predict house prices based on various
+                        features such as location, size, and amenities, aiming to assist buyers, sellers, and real
+                        estate agents in
+                        making informed decisions.</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
+                    <img class="rounded-lg h-max" src="../images/movieSite.png" alt="FARM-D-CARE">
+                </div>
+                <div>
+                    <h1 class="text-2xl text-color3">Movie Site in Django</h1>
+                    <p class="text-xl text-justify">It was simple a Django-based web application designed to offer users
+                        a seamless experience in exploring, and
+                        discovering movies. With an intuitive interface, users can browse a vast database of films. The
+                        platform integrates advanced search and filter functionalities, ensuring users
+                        can easily find movies that match their interests. By combining robust backend capabilities with
+                        a user-friendly
+                        frontend, Movie Site aims to be the go-to destination for movie enthusiasts.
+                    </p>
+
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
+                    <img class="rounded-lg h-max" src="../images/calculator.png" alt="FARM-D-CARE">
+                </div>
+                <div>
+                    <h1 class="text-2xl text-color3">Calculator</h1>
+                    <p class="text-xl text-justify">Calculator App was a straightforward and efficient tool
+                        created using HTML, CSS, and JavaScript. Designed for
+                        ease of use, it enables users to perform basic arithmetic operations such as addition,
+                        subtraction, multiplication, and
+                        division. With a clean and responsive interface, the app ensures a seamless user experience
+                        across various devices. This
+                        project showcases the power of web technologies in delivering functional and user-friendly
+                        applications.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
+                    <img class="rounded-lg h-max" src="../images/landingPage.png" alt="FARM-D-CARE">
+                </div>
+                <div>
+                    <h1 class="text-2xl text-color3">Landing Page</h1>
+                    <p class="text-xl text-justify">The Landing Page for the Educational Website is a welcoming and
+                        informative gateway designed to engage visitors and
+                        provide essential information about educational offerings. Created with HTML, CSS, and
+                        JavaScript, this page features a
+                        clean and modern design that highlights key aspects of the website, such as courses, faculty,
+                        and student testimonials.
+                        With intuitive navigation and visually appealing elements, the landing page ensures an excellent
+                        first impression,
+                        guiding users seamlessly to their desired information and encouraging them to explore further.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
+                    <img class="rounded-lg h-max" src="../images/portfolio.png" alt="FARM-D-CARE">
+                </div>
+                <div>
+                    <h1 class="text-2xl text-color3">Portfolio</h1>
+                    <p class="text-xl text-justify">
+                        The Portfolio Website is a personalized online showcase designed to highlight an individual's
+                        skills, projects, and
+                        professional achievements. Built using HTML, CSS, and JavaScript, this website features a clean,
+                        responsive design that
+                        ensures an engaging and seamless user experience. Visitors can explore various sections, such as
+                        an introduction,
+                        project gallery, resume, and contact information. The Portfolio Website effectively demonstrates
+                        the creator's expertise
+                        and creativity, making it an ideal platform for networking and professional growth.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center mt-16 text-3xl">
+            <p class="text-[sandybrown] target-aboutme">CONTACT ME</p>
+            <div class="relative">
+                <div class="w-[220px] h-[3px] bg-white">
+                    <div
+                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6 mt-10">
+            <div class="pl-10 pr-10 flex flex-col gap-4">
+                <h1 class="text-3xl">Just Say Hello </h1>
+                <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
+                    placeholder="Your Name">
+                <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
+                    placeholder="Your Email">
+                <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
+                    placeholder="Subject">
+                <textarea name="message" class="textbox flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none overflow-scroll max-h-[200px]"
+                    placeholder="Your Message"></textarea>
+                <button class="w-max pl-4 pr-4 pt-2 pb-2 bg-color2 border rounded-full text-black">Send Message</button>
+            </div>
+            <div class="pl-10 pr-10 flex flex-col gap-4">
+                <h1 class="text-3xl">Contact Info</h1>
+                <p class="text-xl">You can reach out me either through email or phone or DM on my social media.</p>
+                <div class="flex gap-4 items-center">
+                    <div>
+                        <img src="../images/email.svg" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-2xl">Email</p>
+                        <p>manishmu632@gmail.com</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <div>
+                        <img src="../images/phone2.svg" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-2xl">Phone</p>
+                        <p>+91 8168948546</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <div>
+                        <img src="../images/address.svg" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-2xl">Address</p>
+                        <div>
+                            <p>Maharishi Markandeshwar Deemed To Be University</p>
+                            <p>Mullana, Ambala, Haryana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="socialLinks flex justify-center gap-2">
+                        <div class="flexDiv">
+                            <div class="socialIcon bg-black z-10">
+                                <img src="../images/instagram.svg" alt="instagram">
+                            </div>
+                            <div class="socialMediaName text-2xl instagram">
+                                Instagram</div>
+                        </div>
+                        <div>
+                            <div class="socialIcon bg-white">
+                                <img src="../images/twitter.svg" alt="twitter">
+                            </div>
+                            <div class="socialMediaName text-2xl twitter">
+                                Twitter</div>
+                        </div>
+                        <div>
+                            <div class="socialIcon bg-white">
+                                <img src="../images/github.svg" alt="github">
+                            </div>
+                            <div class="socialMediaName text-2xl github">
+                                GitHub</div>
+                        </div>
+                        <div>
+                            <div class="socialIcon bg-white">
+                                <img src="../images/linkedin.svg" alt="linkedin">
+                            </div>
+                            <div class="socialMediaName text-2xl linkedin">
+                                LinkedIn</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="mt-16">
+        <div class="flex items-center justify-center">
+            <p>© 2020. Designed by Manish Kumar. All right reserved.</p>
+        </div>
+    </footer>
     <script src="./script.js"></script>
 </body>
 

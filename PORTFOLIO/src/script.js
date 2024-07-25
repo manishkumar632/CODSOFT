@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const text = document.getElementById("typingText");
         let length = text.textContent.length;
         await delay(500);
-        
+
         while (length > 0) {
             text.textContent = text.textContent.slice(0, -1);
             length--;
@@ -41,4 +41,33 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     typingText();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const btech = document.querySelector(`.btech`);
+    const school = document.querySelector(`.school`);
+    if (btech && school) {
+        let btechHeight = btech.clientHeight;
+        let schoolHeight = school.clientHeight;
+        const timeline1 = document.querySelector(`.timeline1`);
+        const timeline2 = document.querySelector(`.timeline2`);
+        if (timeline1 && timeline2) {
+            timeline1.style.height = `${btechHeight + 32}px`;
+            timeline2.style.height = `${schoolHeight - 30}px`;
+        }
+    }
+})
+window.addEventListener("resize", function() {
+    const btech = document.querySelector(`.btech`);
+    const school = document.querySelector(`.school`);
+    if (btech && school) {
+        let btechHeight = btech.clientHeight;
+        let schoolHeight = school.clientHeight;
+        const timeline1 = document.querySelector(`.timeline1`);
+        const timeline2 = document.querySelector(`.timeline2`);
+        if (timeline1 && timeline2) {
+            timeline1.style.height = `${btechHeight + 32}px`;
+            timeline2.style.height = `${schoolHeight - 30}px`;
+        }
+    }
 });

@@ -1,10 +1,13 @@
-nav ul li a{
+nav ul li a {
     transition: color 0.3s ease;
 }
-.phone{
+
+.phone {
     transition: color 0.3s ease;
 }
-nav ul li a:hover, .phone:hover{
+
+nav ul li a:hover,
+.phone:hover {
     color: #FF7F46;
 }
 
@@ -25,4 +28,117 @@ nav ul li a:hover, .phone:hover{
     100% {
         opacity: 0;
     }
+}
+
+.socialLinks>div {
+    display: flex;
+    width: 60px;
+    transition: width 0.5s ease;
+}
+
+.socialLinks>div:hover {
+    width: 180px;
+}
+
+.socialIcon {
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    width: 60px;
+    height: 60px;
+    box-shadow: 1px -1px 5px rgba(255, 255, 255, 0.8);
+}
+
+.socialMediaName {
+    position: absolute;
+    justify-content: end;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    color: white;
+    white-space: no;
+    border-radius: 50px;
+    overflow: hidden;
+    padding-right: 5px;
+    transition: width 0.3s ease;
+}
+.socialIcon img {
+    scale: 1.05;
+}
+.instagram:hover {
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.8), rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.8));
+    width: 180px;
+}
+
+.socialIcon:hover + .socialMediaName.instagram {
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.8), rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.8));
+    width: 180px;
+}
+
+.twitter:hover {
+    background: linear-gradient(to right, black, rgb(51, 51, 51));
+    width: 180px;
+}
+
+.socialIcon:hover + .twitter {
+    background: linear-gradient(to right, black, rgb(51, 51, 51));
+    width: 180px;
+}
+.github:hover {
+    background: linear-gradient(to right, black, rgb(51, 51, 51));
+    width: 180px;
+}
+
+.socialIcon:hover + .github {
+    background: linear-gradient(to right, black, rgb(51, 51, 51));
+    width: 180px;
+}
+.linkedin:hover {
+    background: linear-gradient(to right, white, #006699);
+    width: 180px;
+}
+
+.socialIcon:hover + .linkedin {
+    background: linear-gradient(to right, white, #006699);
+    width: 180px;
+}
+
+.target-aboutme:hover + div>div .underline{
+    width: 220px;
+}
+
+.techStack{
+    transition: tansform 0.5s ease;
+    animation: slideUp 4s ease-in-out infinite;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(-20%);
+    }
+    50%{
+        transform: translateY(-46%);
+    }
+    75%{
+        transform: translateY(-73%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+.textbox {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    overflow: scroll;
+    /* Ensure the div is scrollable */
+}
+.textbox::-webkit-scrollbar {
+    display: none;
 }
