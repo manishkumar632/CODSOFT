@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
@@ -19,520 +20,568 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="bg-color1 text-white pb-6">
-    <header class="flex justify-between pl-4 pr-4 md:pl-16 md:pr-16 items-center sticky top-0 bg-color1 pt-4 pb-4 z-10 opacity-100">
-        <div class="flex justify-center items-center text-3xl gap-4">
-            <img src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900684/codsoft/lx0qinraccybjli1a2km.svg"
-                alt="logo">
-            <h1><span class="text-color2">M</span>anish</h1>
-        </div>
-        <nav class="text-xl hidden lg:flex">
-            <ul class="flex md:gap-4 xl:gap-10">
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutMe">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#myprojects">Projects</a></li>
-                <li><a href="#contactMe">Contact</a></li>
-                <li>|</li>
-                <li class="phone">📞 +91 8168948546</li>
-            </ul>
-        </nav>
-        <div class="lg:hidden md:flex justify-center items-center">
-            <img src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900680/codsoft/tfzz6b7iceys0hlfmptq.svg"
-                alt="">
-        </div>
-    </header>
-    <main class="pl-6 pr-6">
-        <div class="flex flex-col md:grid md:grid-cols-2 gap-16 md:gap-6">
-            <div class="grid grid-cols-1 justify-between gap-16 md:gap-0">
-                <div></div>
-                <div class="grid gap-10 md:gap-0">
-                    <p class="text-color2 text-4xl">Hello I'm</p>
-                    <h1 class="text-4xl xs:text-5xl md:text-5xl lg:text-6xl xl:text-7xl">MANISH KUMAR</h1>
-                    <div class="flex items-center text-4xl">
-                        <p id="typingText" class="text-color2"></p>
-                        <p class="cursor">_</p>
-                        <p class="ml-4">Developer</p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <button
-                        class="w-max bg-blue-500 rounded-[50px] px-6 py-2 hover:bg-[#FF7F46] transition-all duration-300 ease-in-out self-end justify-self-center md:justify-self-start">Hire
-                        Me</button>
-                </div>
+<body class="bg-color1 text-white pb-6 relative">
+    <section>
+        <header
+            class="flex justify-between pl-4 pr-4 md:pl-16 md:pr-16 items-center sticky top-0 bg-color1 pt-4 pb-4 z-10 opacity-100">
+            <div class="flex justify-center items-center text-3xl gap-4">
+                <img src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900684/codsoft/lx0qinraccybjli1a2km.svg"
+                    alt="logo">
+                <h1><span class="text-color2">M</span>anish</h1>
             </div>
-            <div>
-                <img class="rounded-full"
-                    src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900699/codsoft/l4rnonl50io5pkmgwnd2.png"
-                    alt="myImage">
+            <nav class="text-xl hidden lg:flex">
+                <ul class="flex md:gap-4 xl:gap-10">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#myprojects">Projects</a></li>
+                    <li><a href="#contactMe">Contact</a></li>
+                    <li>|</li>
+                    <li class="phone">📞 +91 8168948546</li>
+                </ul>
+            </nav>
+            <div class="sidebarMenu cursor-pointer lg:hidden md:flex justify-center items-center">
+                <img src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900680/codsoft/tfzz6b7iceys0hlfmptq.svg"
+                    alt="">
             </div>
-        </div>
-        <div class="grid text-4xl place-items-center text-[#ceceed] mt-16">
-            <h1 class="mb:text-4xl">Connect With Me</h1>
-        </div>
-        <div class="socialLinks flex justify-center gap-2 mt-10">
-            <div>
-                <a href="https://www.instagram.com/manishx404/" class="no-underline flex">
-                    <div class="socialIcon bg-black z-10">
-                        <img width="40px" height="40px"
-                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900685/codsoft/qt93siqp5uivm91ljff9.svg"
-                            alt="instagram">
-                    </div>
-                    <div class="socialMediaName text-2xl instagram">
-                        Instagram</div>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/profile.php?id=100091751185366" class="no-underline flex">
-                    <div class="socialIcon bg-[#1877F2]">
-                        <img width="40px" height="40px" class="rounded-full" src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721928355/codsoft/yjtdibbeqkiygzaau6oq.svg" alt="facebook">
-                    </div>
-                    <div class="socialMediaName text-2xl facebook">
-                        Facebook</div>
-                </a>
-            </div>
-            <div>
-                <a href="https://github.com/manishkumar632" class="no-underline flex">
-                    <div class="socialIcon bg-white">
-                        <img width="40px" height="40px"
-                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900682/codsoft/g1v7zwxnuc7pitw3xyzk.svg"
-                            alt="github">
-                    </div>
-                    <div class="socialMediaName text-2xl github">
-                        GitHub</div>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/manishkumar632/" class="no-underline flex">
-                    <div class="socialIcon bg-white">
-                        <img width="40px" height="40px"
-                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900684/codsoft/luuxyoqvabosaxwy9ecj.svg"
-                            alt="linkedin">
-                    </div>
-                    <div class="socialMediaName text-2xl linkedin">
-                        LinkedIn</div>
-                </a>
-            </div>
-        </div>
-        <div id="aboutMe" class="flex justify-center flex-col items-center mt-16 text-3xl">
-            <p class="text-[sandybrown] target-aboutme">ABOUT ME</p>
-            <div class="relative">
-                <div class="w-[220px] h-[3px] bg-white">
-                    <div
-                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="grid lg:grid-cols-2 gap-4 mt-10 text-color3">
-            <div class="grid place-items-center">
-                <img class="rounded-3xl sm:w-4/5"
-                    src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900699/codsoft/l4rnonl50io5pkmgwnd2.png"
-                    alt="myImage">
-            </div>
-            <div class="flex flex-col justify-start gap-4 mt-10">
-                <p class="text-2xl">Hi There! I'm Manish Kumar</p>
-                <div class="h-8 overflow-hidden w-[max-content] text-center text-2xl">
-                    <div class="flex justify-center">
-                        <div class="techStack text-color2 pt-6">
-                            <h1>Java</h1>
-                            <h1>Python</h1>
-                            <h1>Web</h1>
+        </header>
+        <main class="pl-6 pr-6">
+            <div class="flex flex-col md:grid md:grid-cols-2 gap-16 md:gap-6">
+                <div class="grid grid-cols-1 justify-between gap-16 md:gap-0">
+                    <div></div>
+                    <div class="grid gap-10 md:gap-0">
+                        <p class="text-color2 text-4xl">Hello I'm</p>
+                        <h1 class="text-4xl xs:text-5xl md:text-5xl lg:text-6xl xl:text-7xl">MANISH KUMAR</h1>
+                        <div class="flex items-center text-4xl">
+                            <p id="typingText" class="text-color2"></p>
+                            <p class="cursor">_</p>
+                            <p class="ml-4">Developer</p>
                         </div>
-                        <h1 class="ml-3 h-[max-content] w-[max-content]">Developer</h1>
+                    </div>
+                    <div class="grid">
+                        <button
+                            class="w-max bg-blue-500 rounded-[50px] px-6 py-2 hover:bg-[#FF7F46] transition-all duration-300 ease-in-out self-end justify-self-center md:justify-self-start">Hire
+                            Me</button>
                     </div>
                 </div>
-                <p class="text-justify sm:text-2xl">Aspiring <u>software developer</u> with strong knowledge in programming
-                    languages and frameworks, and a proven track record of
-                    successful project completion. Seeking to leverage my skills and passion for technology to
-                    contribute to a dynamic team.
-                </p>
-                <div class="flex gap-4 sm:text-2xl">
-                    <div class="flex flex-col w-max">
-                        <span>Birthday</span>
-                        <span>Phone</span>
-                        <span>Email</span>
-                        <span>Address</span>
-                        <span>Language</span>
-                        <span>Freelance</span>
-                    </div>
-                    <div class="flex flex-col w-max">
-                        <span>:</span>
-                        <span>:</span>
-                        <span>:</span>
-                        <span>:</span>
-                        <span>:</span>
-                        <span>:</span>
-                    </div>
-                    <div class="flex flex-col w-max">
-                        <span>Sep-02-2001</span>
-                        <span>+91 8168948546</span>
-                        <span>manishmu632@gmail.com</span>
-                        <span>Sunsari, Nepal</span>
-                        <span>Nepali, English, Hindi</span>
-                        <span>Available</span>
-                    </div>
-                </div>
-                <button class="w-max pl-4 pr-4 pt-2 pb-2 bg-color2 border rounded-full text-black">Download CV</button>
-            </div>
-        </div>
-        <div class="flex justify-center flex-col items-center mt-16 text-3xl">
-            <p class="text-[sandybrown] target-aboutme">MY SKILLS</p>
-            <div class="relative">
-                <div class="w-[220px] h-[3px] bg-white">
-                    <div
-                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
-                    </div>
+                <div>
+                    <img class="rounded-full"
+                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900699/codsoft/l4rnonl50io5pkmgwnd2.png"
+                        alt="myImage">
                 </div>
             </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
-            <div class="flex flex-col justify-center text-justify gap-4">
-                <p class="text-2xl md:text-3xl">All the skills that I have in that field of work are mentioned.</p>
-                <p class="sm:text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus corporis
-                    placeat doloremque voluptatibus ipsum suscipit? Nihil excepturi, quam impedit est ipsa, voluptas at
-                    pariatur unde vitae commodi obcaecati molestias nisi!</p>
+            <div class="grid text-4xl place-items-center text-[#ceceed] mt-16">
+                <h1 class="mb:text-4xl">Connect With Me</h1>
             </div>
-            <div class="text-2xl flex flex-col gap-3 justify-center">
+            <div class="socialLinks flex justify-center gap-2 mt-10">
                 <div>
-                    <div class="flex justify-between"><span>Java</span><span>70%</span></div>
-                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
-                        <div class="flex h-[100%] w-[70%] bg-color2 rounded-full"></div>
-                    </div>
+                    <a href="https://www.instagram.com/manishx404/" class="no-underline flex">
+                        <div class="socialIcon bg-black z-10">
+                            <img width="40px" height="40px"
+                                src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900685/codsoft/qt93siqp5uivm91ljff9.svg"
+                                alt="instagram">
+                        </div>
+                        <div class="socialMediaName text-2xl instagram">
+                            Instagram</div>
+                    </a>
                 </div>
                 <div>
-                    <div class="flex justify-between"><span>Python</span><span>50%</span></div>
-                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
-                        <div class="flex h-[100%] w-[50%] bg-color2 rounded-full"></div>
-                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=100091751185366" class="no-underline flex">
+                        <div class="socialIcon bg-[#1877F2]">
+                            <img width="40px" height="40px" class="rounded-full"
+                                src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721928355/codsoft/yjtdibbeqkiygzaau6oq.svg"
+                                alt="facebook">
+                        </div>
+                        <div class="socialMediaName text-2xl facebook">
+                            Facebook</div>
+                    </a>
                 </div>
                 <div>
-                    <div class="flex justify-between"><span>JavaScript</span> <span>80%</span></div>
-                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
-                        <div class="flex h-[100%] w-[80%] bg-color2 rounded-full"></div>
-                    </div>
+                    <a href="https://github.com/manishkumar632" class="no-underline flex">
+                        <div class="socialIcon bg-white">
+                            <img width="40px" height="40px"
+                                src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900682/codsoft/g1v7zwxnuc7pitw3xyzk.svg"
+                                alt="github">
+                        </div>
+                        <div class="socialMediaName text-2xl github">
+                            GitHub</div>
+                    </a>
                 </div>
                 <div>
-                    <div class="flex justify-between"><span>Django</span> <span>90%</span></div>
-                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
-                        <div class="flex h-[100%] w-[90%] bg-color2 rounded-full"></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="flex justify-between"><span>React</span> <span>60%</span></div>
-                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
-                        <div class="flex h-[100%] w-[60%] bg-color2 rounded-full"></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="flex justify-between"><span>HTML/CSS</span> <span>90%</span></div>
-                    <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
-                        <div class="flex h-[100%] w-[90%] bg-color2 rounded-full"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="resume" class="flex justify-center flex-col items-center mt-16 text-3xl">
-            <p class="text-[sandybrown] target-aboutme">RESUME</p>
-            <div class="relative">
-                <div class="w-[220px] h-[3px] bg-white">
-                    <div
-                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
-                    </div>
+                    <a href="https://www.linkedin.com/in/manishkumar632/" class="no-underline flex">
+                        <div class="socialIcon bg-white">
+                            <img width="40px" height="40px"
+                                src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900684/codsoft/luuxyoqvabosaxwy9ecj.svg"
+                                alt="linkedin">
+                        </div>
+                        <div class="socialMediaName text-2xl linkedin">
+                            LinkedIn</div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="mt-10">
-            <div class="flex gap-4">
-                <div class="flex flex-col items-center gap-8">
-                    <div class="w-12 h-12"><img class="w-full h-auto"
-                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900680/codsoft/z96o2205kjviaqac9yyh.svg"
-                            alt=""></div>
-                    <div class="flex flex-col items-center">
+            <div id="aboutMe" class="flex justify-center flex-col items-center mt-16 text-3xl">
+                <p class="text-[sandybrown] target-aboutme">ABOUT ME</p>
+                <div class="relative">
+                    <div class="w-[220px] h-[3px] bg-white">
                         <div
-                            class="w-3 h-3 bg-slate-700 hover:bg-color2 transition-all duration-200 border-none rounded-full">
+                            class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
                         </div>
-                        <div class="timeline1 w-[1px] bg-slate-700"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-4 mt-10 text-color3">
+                <div class="grid place-items-center">
+                    <img class="rounded-3xl sm:w-4/5"
+                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900699/codsoft/l4rnonl50io5pkmgwnd2.png"
+                        alt="myImage">
+                </div>
+                <div class="flex flex-col justify-start gap-4 mt-10">
+                    <p class="text-2xl">Hi There! I'm Manish Kumar</p>
+                    <div class="h-8 overflow-hidden w-[max-content] text-center text-2xl">
+                        <div class="flex justify-center">
+                            <div class="techStack text-color2 pt-6">
+                                <h1>Java</h1>
+                                <h1>Python</h1>
+                                <h1>Web</h1>
+                            </div>
+                            <h1 class="ml-3 h-[max-content] w-[max-content]">Developer</h1>
+                        </div>
+                    </div>
+                    <p class="text-justify sm:text-2xl">Aspiring <u>software developer</u> with strong knowledge in
+                        programming
+                        languages and frameworks, and a proven track record of
+                        successful project completion. Seeking to leverage my skills and passion for technology to
+                        contribute to a dynamic team.
+                    </p>
+                    <div class="flex gap-4 sm:text-2xl">
+                        <div class="flex flex-col w-max">
+                            <span>Birthday</span>
+                            <span>Phone</span>
+                            <span>Email</span>
+                            <span>Address</span>
+                            <span>Language</span>
+                            <span>Freelance</span>
+                        </div>
+                        <div class="flex flex-col w-max">
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                        </div>
+                        <div class="flex flex-col w-max">
+                            <span>Sep-02-2001</span>
+                            <span>+91 8168948546</span>
+                            <span>manishmu632@gmail.com</span>
+                            <span>Sunsari, Nepal</span>
+                            <span>Nepali, English, Hindi</span>
+                            <span>Available</span>
+                        </div>
+                    </div>
+                    <button class="w-max pl-4 pr-4 pt-2 pb-2 bg-color2 border rounded-full text-black">Download
+                        CV</button>
+                </div>
+            </div>
+            <div class="flex justify-center flex-col items-center mt-16 text-3xl">
+                <p class="text-[sandybrown] target-aboutme">MY SKILLS</p>
+                <div class="relative">
+                    <div class="w-[220px] h-[3px] bg-white">
                         <div
-                            class="w-3 h-3 bg-slate-700 hover:bg-color2 transition-all duration-200 border-none rounded-full">
-                        </div>
-                        <div class="timeline2 w-[1px] bg-slate-700"></div>
-
-
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <div class="h-12 flex items-center text-3xl">
-                        <h1>Education</h1>
-                    </div>
-                    <div class="flex flex-col gap-12">
-                        <div class="btech flex flex-col gap-4">
-                            <div>
-                                <h1 class="text-3xl text-color2">Bachelor of Computer Science and Engineering</h1>
-                                <h1 class="text-lg">2022 - Ongoing</h1>
-                            </div>
-                            <div>
-                                <h1 class="text-2xl text-color3">Maharishi Markandeshwar Deemed To Be University</h1>
-                                <h1 class="text-lg">Mullana, Ambala, Haryana, India</h1>
-                            </div>
-                        </div>
-                        <div class="school flex flex-col gap-4">
-                            <div>
-                                <h1 class="text-3xl text-color2">+2 in Computer Science</h1>
-                                <h1 class="text-lg">2017 - 2019</h1>
-                            </div>
-                            <div>
-                                <h1 class="text-2xl text-color3">Kantipur Secondary School</h1>
-                                <h1 class="text-lg">Biratnagar, Morang, Nepal</h1>
-                            </div>
+                            class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="myprojects" class="flex justify-center flex-col items-center mt-16 text-3xl">
-            <p class="text-[sandybrown] target-aboutme">PROJECTS</p>
-            <div class="relative">
-                <div class="w-[220px] h-[3px] bg-white">
-                    <div
-                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
+                <div class="flex flex-col justify-center text-justify gap-4">
+                    <p class="text-2xl md:text-3xl">All the skills that I have in that field of work are mentioned.</p>
+                    <p class="sm:text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
+                        corporis
+                        placeat doloremque voluptatibus ipsum suscipit? Nihil excepturi, quam impedit est ipsa, voluptas
+                        at
+                        pariatur unde vitae commodi obcaecati molestias nisi!</p>
+                </div>
+                <div class="text-2xl flex flex-col gap-3 justify-center">
+                    <div>
+                        <div class="flex justify-between"><span>Java</span><span>70%</span></div>
+                        <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                            <div class="flex h-[100%] w-[70%] bg-color2 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between"><span>Python</span><span>50%</span></div>
+                        <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                            <div class="flex h-[100%] w-[50%] bg-color2 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between"><span>JavaScript</span> <span>80%</span></div>
+                        <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                            <div class="flex h-[100%] w-[80%] bg-color2 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between"><span>Django</span> <span>90%</span></div>
+                        <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                            <div class="flex h-[100%] w-[90%] bg-color2 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between"><span>React</span> <span>60%</span></div>
+                        <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                            <div class="flex h-[100%] w-[60%] bg-color2 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between"><span>HTML/CSS</span> <span>90%</span></div>
+                        <div class="flex h-1 bg-[#CECEED] border-none rounded-full">
+                            <div class="flex h-[100%] w-[90%] bg-color2 rounded-full"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="mt-10 flex flex-col gap-6 lg:pl-16 lg:pr-16">
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="flex min-w-[250px] justify-center">
-                    <img class="rounded-lg"
-                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900684/codsoft/zpl7vi82aiirsrskefbu.png"
-                        alt="FARM-D-CARE">
-                </div>
-                <div>
-                    <h1 class="text-2xl text-color3">Farm-D-Care</h1>
-                    <p class="text-xl text-justify">Farm-D-Care was a AI-ML based app project integrating agriculture
-                        and technology to revolutionise crop
-                        disease detection. It was developed with the vision to empower farmers with actionable insights,
-                        enhancing
-                        crop health and productivity as by capturing images, farmers could swiftly diagnose diseases,
-                        enabling
-                        proactive measures to safeguard yields.</p>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="flex min-w-[250px] justify-center">
-                    <img class="rounded-lg"
-                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900689/codsoft/fppc3vhbllitmhfxoliu.svg"
-                        alt="FARM-D-CARE">
-                </div>
-                <div>
-                    <h1 class="text-2xl text-color3">Smart Charge Monitoring System</h1>
-                    <p class="text-xl text-justify">Smart charging control system automatically disconnects the power
-                        supply to a charger once the connected
-                        device is fully charged, enhancing energy efficiency and prolonging battery life. It was
-                        developed with the
-                        vision to save electricity wastage.</p>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="flex min-w-[250px] justify-center">
-                    <img class="rounded-lg"
-                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900685/codsoft/z11qxtx69sexcdh8cjgi.svg"
-                        alt="FARM-D-CARE">
-                </div>
-                <div>
-                    <h1 class="text-2xl text-color3">House Price Prediction</h1>
-                    <p class="text-xl text-justify">It was machine learning project in which a model was built to
-                        predict house prices based on various
-                        features such as location, size, and amenities, aiming to assist buyers, sellers, and real
-                        estate agents in
-                        making informed decisions.</p>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
-                    <img class="rounded-lg h-max"
-                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900700/codsoft/cehnacijkrvucuvsdrfv.png"
-                        alt="FARM-D-CARE">
-                </div>
-                <div>
-                    <h1 class="text-2xl text-color3">Movie Site in Django</h1>
-                    <p class="text-xl text-justify">It was simple a Django-based web application designed to offer users
-                        a seamless experience in exploring, and
-                        discovering movies. With an intuitive interface, users can browse a vast database of films. The
-                        platform integrates advanced search and filter functionalities, ensuring users
-                        can easily find movies that match their interests. By combining robust backend capabilities with
-                        a user-friendly
-                        frontend, Movie Site aims to be the go-to destination for movie enthusiasts.
-                    </p>
-
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
-                    <img class="rounded-lg h-max"
-                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900681/codsoft/yrrfxxsa51qsvivrnejf.png"
-                        alt="FARM-D-CARE">
-                </div>
-                <div>
-                    <h1 class="text-2xl text-color3">Calculator</h1>
-                    <p class="text-xl text-justify">Calculator App was a straightforward and efficient tool
-                        created using HTML, CSS, and JavaScript. Designed for
-                        ease of use, it enables users to perform basic arithmetic operations such as addition,
-                        subtraction, multiplication, and
-                        division. With a clean and responsive interface, the app ensures a seamless user experience
-                        across various devices. This
-                        project showcases the power of web technologies in delivering functional and user-friendly
-                        applications.
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
-                    <img class="rounded-lg h-max"
-                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900692/codsoft/cwntd1tja0lixz6ephrl.png"
-                        alt="FARM-D-CARE">
-                </div>
-                <div>
-                    <h1 class="text-2xl text-color3">Landing Page</h1>
-                    <p class="text-xl text-justify">The Landing Page for the Educational Website is a welcoming and
-                        informative gateway designed to engage visitors and
-                        provide essential information about educational offerings. Created with HTML, CSS, and
-                        JavaScript, this page features a
-                        clean and modern design that highlights key aspects of the website, such as courses, faculty,
-                        and student testimonials.
-                        With intuitive navigation and visually appealing elements, the landing page ensures an excellent
-                        first impression,
-                        guiding users seamlessly to their desired information and encouraging them to explore further.
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
-                    <img class="rounded-lg h-max"
-                        src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900687/codsoft/x5kppzvp9djygohaobot.png"
-                        alt="FARM-D-CARE">
-                </div>
-                <div>
-                    <h1 class="text-2xl text-color3">Portfolio</h1>
-                    <p class="text-xl text-justify">
-                        The Portfolio Website is a personalized online showcase designed to highlight an individual's
-                        skills, projects, and
-                        professional achievements. Built using HTML, CSS, and JavaScript, this website features a clean,
-                        responsive design that
-                        ensures an engaging and seamless user experience. Visitors can explore various sections, such as
-                        an introduction,
-                        project gallery, resume, and contact information. The Portfolio Website effectively demonstrates
-                        the creator's expertise
-                        and creativity, making it an ideal platform for networking and professional growth.
-
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="contactMe" class="flex justify-center flex-col items-center mt-16 text-3xl">
-            <p class="text-[sandybrown] target-aboutme">CONTACT ME</p>
-            <div class="relative">
-                <div class="w-[220px] h-[3px] bg-white">
-                    <div
-                        class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+            <div id="resume" class="flex justify-center flex-col items-center mt-16 text-3xl">
+                <p class="text-[sandybrown] target-aboutme">RESUME</p>
+                <div class="relative">
+                    <div class="w-[220px] h-[3px] bg-white">
+                        <div
+                            class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
-            <div class="sm:pl-10 sm:pr-10 flex flex-col gap-4 mb:pl-2 mb:pr-2">
-                <h1 class="text-3xl">Just Say Hello </h1>
-                <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
-                    placeholder="Your Name">
-                <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
-                    placeholder="Your Email">
-                <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
-                    placeholder="Subject">
-                <textarea name="message"
-                    class="textbox flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none overflow-scroll max-h-[200px]"
-                    placeholder="Your Message"></textarea>
-                <button class="w-max pl-4 pr-4 pt-2 pb-2 bg-color2 border rounded-full text-black">Send Message</button>
+            <div class="mt-10">
+                <div class="flex gap-4">
+                    <div class="flex flex-col items-center gap-8">
+                        <div class="w-12 h-12"><img class="w-full h-auto"
+                                src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900680/codsoft/z96o2205kjviaqac9yyh.svg"
+                                alt=""></div>
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-3 h-3 bg-slate-700 hover:bg-color2 transition-all duration-200 border-none rounded-full">
+                            </div>
+                            <div class="timeline1 w-[1px] bg-slate-700"></div>
+                            <div
+                                class="w-3 h-3 bg-slate-700 hover:bg-color2 transition-all duration-200 border-none rounded-full">
+                            </div>
+                            <div class="timeline2 w-[1px] bg-slate-700"></div>
+
+
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="h-12 flex items-center text-3xl">
+                            <h1>Education</h1>
+                        </div>
+                        <div class="flex flex-col gap-12">
+                            <div class="btech flex flex-col gap-4">
+                                <div>
+                                    <h1 class="text-3xl text-color2">Bachelor of Computer Science and Engineering</h1>
+                                    <h1 class="text-lg">2022 - Ongoing</h1>
+                                </div>
+                                <div>
+                                    <h1 class="text-2xl text-color3">Maharishi Markandeshwar Deemed To Be University
+                                    </h1>
+                                    <h1 class="text-lg">Mullana, Ambala, Haryana, India</h1>
+                                </div>
+                            </div>
+                            <div class="school flex flex-col gap-4">
+                                <div>
+                                    <h1 class="text-3xl text-color2">+2 in Computer Science</h1>
+                                    <h1 class="text-lg">2017 - 2019</h1>
+                                </div>
+                                <div>
+                                    <h1 class="text-2xl text-color3">Kantipur Secondary School</h1>
+                                    <h1 class="text-lg">Biratnagar, Morang, Nepal</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="sm:pl-10 sm:pr-10 flex flex-col gap-4 mb:pl-2 mb:pr-2">
-                <h1 class="text-3xl">Contact Info</h1>
-                <p class="text-xl">You can reach out me either through email or phone or DM on my social media.</p>
-                <div class="flex gap-4 items-center">
-                        <img width="30px" height="30px" src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900682/codsoft/d3mqte1rq0dqrzvhbpzw.svg"
+            <div id="myprojects" class="flex justify-center flex-col items-center mt-16 text-3xl">
+                <p class="text-[sandybrown] target-aboutme">PROJECTS</p>
+                <div class="relative">
+                    <div class="w-[220px] h-[3px] bg-white">
+                        <div
+                            class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-col gap-6 lg:pl-16 lg:pr-16">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex min-w-[250px] justify-center">
+                        <img class="rounded-lg"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900684/codsoft/zpl7vi82aiirsrskefbu.png"
+                            alt="FARM-D-CARE">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-color3">Farm-D-Care</h1>
+                        <p class="text-xl text-justify">Farm-D-Care was a AI-ML based app project integrating
+                            agriculture
+                            and technology to revolutionise crop
+                            disease detection. It was developed with the vision to empower farmers with actionable
+                            insights,
+                            enhancing
+                            crop health and productivity as by capturing images, farmers could swiftly diagnose
+                            diseases,
+                            enabling
+                            proactive measures to safeguard yields.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex min-w-[250px] justify-center">
+                        <img class="rounded-lg"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900689/codsoft/fppc3vhbllitmhfxoliu.svg"
+                            alt="FARM-D-CARE">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-color3">Smart Charge Monitoring System</h1>
+                        <p class="text-xl text-justify">Smart charging control system automatically disconnects the
+                            power
+                            supply to a charger once the connected
+                            device is fully charged, enhancing energy efficiency and prolonging battery life. It was
+                            developed with the
+                            vision to save electricity wastage.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex min-w-[250px] justify-center">
+                        <img class="rounded-lg"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900685/codsoft/z11qxtx69sexcdh8cjgi.svg"
+                            alt="FARM-D-CARE">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-color3">House Price Prediction</h1>
+                        <p class="text-xl text-justify">It was machine learning project in which a model was built to
+                            predict house prices based on various
+                            features such as location, size, and amenities, aiming to assist buyers, sellers, and real
+                            estate agents in
+                            making informed decisions.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
+                        <img class="rounded-lg h-max"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900700/codsoft/cehnacijkrvucuvsdrfv.png"
+                            alt="FARM-D-CARE">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-color3">Movie Site in Django</h1>
+                        <p class="text-xl text-justify">It was simple a Django-based web application designed to offer
+                            users
+                            a seamless experience in exploring, and
+                            discovering movies. With an intuitive interface, users can browse a vast database of films.
+                            The
+                            platform integrates advanced search and filter functionalities, ensuring users
+                            can easily find movies that match their interests. By combining robust backend capabilities
+                            with
+                            a user-friendly
+                            frontend, Movie Site aims to be the go-to destination for movie enthusiasts.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
+                        <img class="rounded-lg h-max"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900681/codsoft/yrrfxxsa51qsvivrnejf.png"
+                            alt="FARM-D-CARE">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-color3">Calculator</h1>
+                        <p class="text-xl text-justify">Calculator App was a straightforward and efficient tool
+                            created using HTML, CSS, and JavaScript. Designed for
+                            ease of use, it enables users to perform basic arithmetic operations such as addition,
+                            subtraction, multiplication, and
+                            division. With a clean and responsive interface, the app ensures a seamless user experience
+                            across various devices. This
+                            project showcases the power of web technologies in delivering functional and user-friendly
+                            applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
+                        <img class="rounded-lg h-max"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900692/codsoft/cwntd1tja0lixz6ephrl.png"
+                            alt="FARM-D-CARE">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-color3">Landing Page</h1>
+                        <p class="text-xl text-justify">The Landing Page for the Educational Website is a welcoming and
+                            informative gateway designed to engage visitors and
+                            provide essential information about educational offerings. Created with HTML, CSS, and
+                            JavaScript, this page features a
+                            clean and modern design that highlights key aspects of the website, such as courses,
+                            faculty,
+                            and student testimonials.
+                            With intuitive navigation and visually appealing elements, the landing page ensures an
+                            excellent
+                            first impression,
+                            guiding users seamlessly to their desired information and encouraging them to explore
+                            further.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex min-w-[250px] lg:max-w-[250px] justify-center items-center">
+                        <img class="rounded-lg h-max"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900687/codsoft/x5kppzvp9djygohaobot.png"
+                            alt="FARM-D-CARE">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-color3">Portfolio</h1>
+                        <p class="text-xl text-justify">
+                            The Portfolio Website is a personalized online showcase designed to highlight an
+                            individual's
+                            skills, projects, and
+                            professional achievements. Built using HTML, CSS, and JavaScript, this website features a
+                            clean,
+                            responsive design that
+                            ensures an engaging and seamless user experience. Visitors can explore various sections,
+                            such as
+                            an introduction,
+                            project gallery, resume, and contact information. The Portfolio Website effectively
+                            demonstrates
+                            the creator's expertise
+                            and creativity, making it an ideal platform for networking and professional growth.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="contactMe" class="flex justify-center flex-col items-center mt-16 text-3xl">
+                <p class="text-[sandybrown] target-aboutme">CONTACT ME</p>
+                <div class="relative">
+                    <div class="w-[220px] h-[3px] bg-white">
+                        <div
+                            class="underline w-[160px] h-[3px] bg-color2 absolute left-1/2 -translate-x-1/2 transition-all duration-300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+                <div class="sm:pl-10 sm:pr-10 flex flex-col gap-4 mb:pl-2 mb:pr-2">
+                    <h1 class="text-3xl">Just Say Hello </h1>
+                    <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
+                        placeholder="Your Name">
+                    <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
+                        placeholder="Your Email">
+                    <input class="flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none" type="text"
+                        placeholder="Subject">
+                    <textarea name="message"
+                        class="textbox flex w-full p-4 rounded-lg bg-[#101624] text-xl outline-none overflow-scroll max-h-[200px]"
+                        placeholder="Your Message"></textarea>
+                    <button class="w-max pl-4 pr-4 pt-2 pb-2 bg-color2 border rounded-full text-black">Send
+                        Message</button>
+                </div>
+                <div class="sm:pl-10 sm:pr-10 flex flex-col gap-4 mb:pl-2 mb:pr-2">
+                    <h1 class="text-3xl">Contact Info</h1>
+                    <p class="text-xl">You can reach out me either through email or phone or DM on my social media.</p>
+                    <div class="flex gap-4 items-center">
+                        <img width="30px" height="30px"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900682/codsoft/d3mqte1rq0dqrzvhbpzw.svg"
                             alt="Email Icon">
-                    <div class="flex flex-col">
-                        <p class="text-2xl">Email</p>
-                        <p>manishmu632@gmail.com</p>
+                        <div class="flex flex-col">
+                            <p class="text-2xl">Email</p>
+                            <p>manishmu632@gmail.com</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-4 items-center">
-                        <img width="30px" height="30px" src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900682/codsoft/u2tdlqmbzijirugrksr8.svg"
+                    <div class="flex gap-4 items-center">
+                        <img width="30px" height="30px"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900682/codsoft/u2tdlqmbzijirugrksr8.svg"
                             alt="phone Icon">
-                    <div class="flex flex-col">
-                        <p class="text-2xl">Phone</p>
-                        <p>+91 8168948546</p>
+                        <div class="flex flex-col">
+                            <p class="text-2xl">Phone</p>
+                            <p>+91 8168948546</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-4 items-center">
-                        <img width="30px" height="30px" src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900680/codsoft/l5ii8gxqmzegbgnc6ryp.svg"
+                    <div class="flex gap-4 items-center">
+                        <img width="30px" height="30px"
+                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900680/codsoft/l5ii8gxqmzegbgnc6ryp.svg"
                             alt="Address Icon">
-                    <div class="flex flex-col">
-                        <p class="text-2xl">Address</p>
-                        <div>
-                            <p>Maharishi Markandeshwar Deemed To Be University</p>
-                            <p>Mullana, Ambala, Haryana</p>
+                        <div class="flex flex-col">
+                            <p class="text-2xl">Address</p>
+                            <div>
+                                <p>Maharishi Markandeshwar Deemed To Be University</p>
+                                <p>Mullana, Ambala, Haryana</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="socialLinks flex justify-center gap-2">
-                        <div>
-                            <a href="https://www.instagram.com/manishx404/" class="no-underline flex">
-                            <div class="socialIcon bg-black z-10">
-                                <img width="40px" height="40px" src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900685/codsoft/qt93siqp5uivm91ljff9.svg"
-                                    alt="instagram">
-                            </div>
-                            <div class="socialMediaName text-2xl instagram">
-                                Instagram</div>
+                    <div class="flex">
+                        <div class="socialLinks flex justify-center gap-2">
+                            <div>
+                                <a href="https://www.instagram.com/manishx404/" class="no-underline flex">
+                                    <div class="socialIcon bg-black z-10">
+                                        <img width="40px" height="40px"
+                                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900685/codsoft/qt93siqp5uivm91ljff9.svg"
+                                            alt="instagram">
+                                    </div>
+                                    <div class="socialMediaName text-2xl instagram">
+                                        Instagram</div>
                                 </a>
-                        </div>
-                        <div>
-                            <a href="https://www.facebook.com/profile.php?id=100091751185366" class="no-underline flex">
-                            <div class="socialIcon bg-[#1877F2]">
-                                <img width="40px" height="40px" class="rounded-full" src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721928355/codsoft/yjtdibbeqkiygzaau6oq.svg"
-                                    alt="facebook">
                             </div>
-                            <div class="socialMediaName text-2xl facebook">
-                                Facebook</div></a>
-                        </div>
-                        <div>
-                            <a href="https://github.com/manishkumar632" class="no-underline flex">
-                            <div class="socialIcon bg-white">
-                                <img width="40px" height="40px" src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900682/codsoft/g1v7zwxnuc7pitw3xyzk.svg"
-                                    alt="github">
+                            <div>
+                                <a href="https://www.facebook.com/profile.php?id=100091751185366"
+                                    class="no-underline flex">
+                                    <div class="socialIcon bg-[#1877F2]">
+                                        <img width="40px" height="40px" class="rounded-full"
+                                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721928355/codsoft/yjtdibbeqkiygzaau6oq.svg"
+                                            alt="facebook">
+                                    </div>
+                                    <div class="socialMediaName text-2xl facebook">
+                                        Facebook</div>
+                                </a>
                             </div>
-                            <div class="socialMediaName text-2xl github">
-                                GitHub</div></a>
-                        </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/manishkumar632/" class="no-underline flex">
-                            <div class="socialIcon bg-white">
-                                <img width="40px" height="40px" src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900684/codsoft/luuxyoqvabosaxwy9ecj.svg"
-                                    alt="linkedin">
+                            <div>
+                                <a href="https://github.com/manishkumar632" class="no-underline flex">
+                                    <div class="socialIcon bg-white">
+                                        <img width="40px" height="40px"
+                                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900682/codsoft/g1v7zwxnuc7pitw3xyzk.svg"
+                                            alt="github">
+                                    </div>
+                                    <div class="socialMediaName text-2xl github">
+                                        GitHub</div>
+                                </a>
                             </div>
-                            <div class="socialMediaName text-2xl linkedin">
-                                LinkedIn</div></a>
+                            <div>
+                                <a href="https://www.linkedin.com/in/manishkumar632/" class="no-underline flex">
+                                    <div class="socialIcon bg-white">
+                                        <img width="40px" height="40px"
+                                            src="https://res.cloudinary.com/dcvg9vrez/image/upload/v1721900684/codsoft/luuxyoqvabosaxwy9ecj.svg"
+                                            alt="linkedin">
+                                    </div>
+                                    <div class="socialMediaName text-2xl linkedin">
+                                        LinkedIn</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </main>
+        <footer class="mt-16 pl-6 pr-6">
+            <div class="grid place-items-center">
+                <p>© 2024. Designed by Manish Kumar. All right reserved.</p>
+            </div>
+        </footer>
+    </section>
+    <section class="sidebar glass-card hidden fixed w-[90%] top-0 right-0 bg bg-black z-30 mr-2 mt-1">
+        <div class="grid gap-4">
+            <div class="grid closeSideBar cursor-pointer justify-self-end bg-[rgba(255,255,255,0.2)] w-12 h-12 place-items-center text-3xl rounded-full text-black">X</div>
+            <div class="grid place-items-start self-center justify-self-center gap-6">
+                <a href="#"><span><i class="fas fa-home"></i></span>  Home</a>
+                <a href="#aboutMe"><span><i class="fas fa-info-circle"></i></span>  About</a>
+                <a href="#resume"><span><i class="fas fa-file-alt"></i></span>  Resume</a>
+                <a href="#myprojects"><span><i class="fas fa-briefcase"></i></span> Projects</a>
+                <a href="#contactMe"><i class="fas fa-envelope"></i>  Contact</a>
+            </div>
         </div>
-    </main>
-    <footer class="mt-16 pl-6 pr-6">
-        <div class="grid place-items-center">
-            <p>© 2024. Designed by Manish Kumar. All right reserved.</p>
-        </div>
-    </footer>
+    </section>
     <script src="./script.js"></script>
 </body>
 

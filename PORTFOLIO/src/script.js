@@ -71,3 +71,20 @@ window.addEventListener("resize", function() {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const ele = document.querySelector(".sidebarMenu");
+    ele.addEventListener("click", function() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display =
+            sidebar.style.display === "none" ? "grid" : "none";
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const ele = document.querySelector(".closeSideBar");
+    ele.addEventListener("click", function() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display =
+            sidebar.style.display === "grid" ? "none" : "grid";
+    });
+});
